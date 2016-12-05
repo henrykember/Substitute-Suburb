@@ -3,44 +3,74 @@
     <meta charset="utf-8" />
     <title>Henry Kember | Vital Stats</title>
     <link rel="stylesheet" type="text/css" href="./reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./subsitutesuburb.css"/>
+    <link rel="stylesheet" type="text/css" href="./SubstituteSuburb.css"/>
     <script
         src="https://code.jquery.com/jquery-3.1.0.min.js"
         integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./substituesuburb.js"></script>
+    <script type="text/javascript" src="./substitutesuburb.js"></script>
     <script src="https://use.fontawesome.com/dabf123cfb.js"></script>
     </head>
     <body>
     <div class="title">substitute suburb</div>
     <div class="subhead">welcome to wherever you want</div>
-    <div class="intropara">
-    People define us by the suburb we live in.
-    Everything from socioeconomic status, to political leanings, and even what we wear or the car we drive; these are all assumptions made based on our postal address. But a few years ago, I had to give my address for something, and for some reason I've long since forgotten, I put a random bunch of words where my suburb should have been. And yet, the mail still arrived. 
-    I then tested it further, with ever-more outlandish names (and numbers, and characters), and every time the mail turned up. What this tells us is, we can substitute anything we want for our suburb name. No more branding, no more assumptions - at least, none we don't want. It's pretty much up to you. 
-    So give us your mailing address including your substitute suburb name, and we'll send you a letter. If you get the letter, that suburb is yours to have.
-    So far we've created new one-address suburbs in Sydney, Melbourne and Los Angeles. And we're really keen to see where else this'll work. 
-    There are 7 billion potential substitute suburbs out there. Take yours.
+    <div class="intro section long">
+      <div class="intro header long">The Long Version</div>
+        <div class="intropara long">
+	    People define us by the suburb we live in.
+	    Everything from socioeconomic status, to political leanings, and even what we wear or the car we drive; these are all assumptions made based on our postal address. But a few years ago, I had to give my address for something, and for some reason that I've long since forgotten, I put a random bunch of words where my suburb should have been. And yet, the mail still arrived. 
+	    I then tested it further, with ever-more outlandish names (and numbers, and characters), and every time the mail turned up. What this tells us is, we can substitute anything we want for our suburb name. No more branding, no more assumptions - at least, none we don't want. 
+	    It's pretty much up to you. 
+	    So give us your mailing address including your substitute suburb name, and we'll send you a letter. If you get the letter, that suburb is yours to have.
+	    So far we've created new one-address suburbs in Sydney, Melbourne and Los Angeles. And we're really keen to see where else this'll work. 
+	    There are 7 billion potential substitute suburbs out there. Take yours.
+	    </div> 
     </div>
-    <form action="/thesuburbs" method="post">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name"/>
-      <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail" />
-      </div>
-      <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
+    <div class="intropara light">
+    Did you know that if you live in Sydney, you can call your suburb anything you want?
+    Yes.
+    Just get the street name and number and postcode right, and when it comes to the suburb name you can be as anarchic as you like.
+    But does it work outside Sydney?
+    More specifically, does it work where you are right now as you read this?
+    Why not pop your street address, along with whatever nutjob suburb name you come up with, into the form below, and I'll send you a letter.
+    If it works, try it on other stuff. Get the council to send rates letters.
+    And see if anything happens.
     </div>
 
+    <div id="letter">
+	    <form action="/thesuburbs" method="post">
+	      <div>
+	        <label for="name"></label>
+	        <input type="text" id="name" name="user_name" value="Name"/>
+	      </div>
+	      <div>
+	        <label for="street"></label>
+	        <input type="text" id="streetaddress" name="user_stnumber" value="Street Number & Name" />
+	      </div>
+	      <div>
+	        <label for="suburb"></label>
+	        <input type="text" id="substitutesuburb" name="user_subsub" value="Substitute Suburb" />
+	      </div>
+	      <div>
+	        <label for="city"></label>
+	        <input type="text" id="city" name="user_city" value="City" />
+	      </div>
+	      <div>
+	        <label for="postcode"></label>
+	        <input type="text" id="postcode" name="user_postcode" value="Postcode" />
+	      </div>
+	      <div>
+	        <label for="Country"></label>
+	        <input type="text" id="country" name="user_country" value="Country" />
+	      </div>
+	      <div class="button">
+	        <button type="submit">Send me a letter</button>
+	      </div>
+	    </form>
+	 </div>
 
-    Name (placeholder in field)
 
-    <value="placeholder">
-    Address (placeholder in field)
-    Substitute Suburb (placeholder in field)
+
 
 
 
