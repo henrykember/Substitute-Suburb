@@ -12,10 +12,18 @@
     <script src="https://use.fontawesome.com/dabf123cfb.js"></script>
     </head>
     <body>
-    <div class="title">substitute suburb</div>
-    <div class="subhead">welcome to wherever you want</div>
-    <div class="intro section long">
-      <div class="intro header long">The Long Version</div>
+    
+    <div class="masthead"></div>
+    <div class="mastheadcopy">
+	    <div class="title">substitute suburb</div>
+	    <div class="subhead">welcome to wherever you want</div>
+	</div>
+
+	<div class="wallpaper"><img src="./CHESS2014_Suburbs_Photo_MStrozier_Flickrr.jpg"/></div>
+    
+   <!--  <div class="introsection"> -->
+      <div class="introcontainer long">
+        <div class="introheader long">The Long Version</div>
         <div class="intropara long">
 	    People define us by the suburb we live in.
 	    Everything from socioeconomic status, to political leanings, and even what we wear or the car we drive; these are all assumptions made based on our postal address. But a few years ago, I had to give my address for something, and for some reason that I've long since forgotten, I put a random bunch of words where my suburb should have been. And yet, the mail still arrived. 
@@ -24,52 +32,58 @@
 	    So give us your mailing address including your substitute suburb name, and we'll send you a letter. If you get the letter, that suburb is yours to have.
 	    So far we've created new one-address suburbs in Sydney, Melbourne and Los Angeles. And we're really keen to see where else this'll work. 
 	    There are 7 billion potential substitute suburbs out there. Take yours.
-	    </div> 
-    </div>
-    <div class="intropara light">
-    Did you know that if you live in Sydney, you can call your suburb anything you want?
-    Yes.
-    Just get the street name and number and postcode right, and when it comes to the suburb name you can be as anarchic as you like.
-    But does it work outside Sydney?
-    More specifically, does it work where you are right now as you read this?
-    Why not pop your street address, along with whatever nutjob suburb name you come up with, into the form below, and I'll send you a letter.
-    If it works, try it on other stuff. Get the council to send rates letters.
-    And see if anything happens.
-    </div>
+	    </div>
+	  </div>
 
-    <div id="letter">
-	    <form action="/thesuburbs" method="post">
-	      <div>
-	        <label for="name"></label>
-	        <input type="text" id="name" name="user_name" value="Name"/>
-	      </div>
-	      <div>
-	        <label for="street"></label>
-	        <input type="text" id="streetaddress" name="user_stnumber" value="Street Number & Name" />
-	      </div>
-	      <div>
-	        <label for="suburb"></label>
-	        <input type="text" id="substitutesuburb" name="user_subsub" value="Substitute Suburb" />
-	      </div>
-	      <div>
-	        <label for="city"></label>
-	        <input type="text" id="city" name="user_city" value="City" />
-	      </div>
-	      <div>
-	        <label for="postcode"></label>
-	        <input type="text" id="postcode" name="user_postcode" value="Postcode" />
-	      </div>
-	      <div>
-	        <label for="Country"></label>
-	        <input type="text" id="country" name="user_country" value="Country" />
-	      </div>
-	      <div class="button">
-	        <button type="submit">Send me a letter</button>
-	      </div>
-	    </form>
+	  <div class="introcontainer short">
+      	<div class="introheader short">The Short Version</div>
+      	<div class="intropara short">
+		    Did you know that if you live in Sydney, you can call your suburb anything you want?
+		    Yes.
+		    Just get the street name and number and postcode right, and and go nuts with the suburb name.
+		    Want proof?
+		    Why not enter your address, along with whatever nutjob suburb name you come up with below, and I'll send you a letter.
+		    If it works, try it on other stuff. Get the council to send rates letters.
+	  	</div>
+	  </div>
+   <!--  </div> -->
+
+    <div id="letterwrapper">
+    	<div class="letter">
+		    <form action="/thesuburbs" method="post">
+		      <div div class="fields">
+		        <label for="name"></label>
+		        <input type="text" id="name" name="user_name" placeholder="Name"/>
+		      </div>
+		      <div div class="fields">
+		        <label for="street"></label>
+		        <input type="text" id="streetaddress" name="user_stnumber" placeholder="Street Number & Name" />
+		      </div>
+		      <div div class="fields">
+		        <label for="suburb"></label>
+		        <input type="text" id="substitutesuburb" name="user_subsub" placeholder="Substitute Suburb" />
+		      </div>
+		      <div class="fields">
+		        <label for="city"></label>
+		        <input type="text" id="city" name="user_city" placeholder="City" />
+		      </div>
+		      <div class="fields">
+		        <label for="postcode"></label>
+		        <input type="text" id="postcode" name="user_postcode" placeholder="Postcode"/>
+		      </div>
+		      <div div class="fields">
+		        <label for="Country"></label>
+		        <input type="text" id="country" name="user_country" placeholder="Country" />
+		      </div>
+		      <div class="button zigzag">
+		        <button type="submit">Send me a letter</button>
+		      </div>
+		    </form>
+		 </div>
 	 </div>
 
 
+<div class="h-zigzag">horizontal</div>
 
 
 
