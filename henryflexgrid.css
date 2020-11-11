@@ -1,0 +1,78 @@
+@font-face  {
+	font-family: "Circular Standard";
+    src: url(CircularStd/CircularStd-Medium.otf);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.grid.first {
+    display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   grid-template-rows: 200px 300px;
+   grid-column-gap: 15px;
+   grid-row-gap: 15px;
+   margin: 15px 15px 15px 15px;
+}
+.grid.second {
+    display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: 100px 100px;
+   grid-row-gap: 15px;
+   grid-column-gap: 15px;
+   margin: 15px 15px 15px 15px;
+}
+.one {
+	border: 1px solid black;
+}
+.two {
+	border: 1px solid black;
+}
+.one.deux {
+	border: 1px solid black;
+	border-right: 0;
+}
+.one.deux:after {
+    content: " ";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: -17px;
+    left: 0;
+    z-index: -1;
+    border: 1px solid black;
+    border-left: 0;
+    margin-right: 80px;
+    transform-origin: bottom left;
+    transform: skew(-30deg, 0deg);
+}
+.one.trois  {
+	content: " ";
+    display: block;
+    width: 100%;
+    height: 99%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid black;
+    border-right: 0;
+    transform-origin: bottom right;
+    transform: skew(-30deg, 0deg);
+}
+.one.trois:after {
+	content: " ";
+    display: block;
+    height: 100.5%;
+    margin-top: -17px;
+    margin-left: -80px;
+    border: 1px solid black;
+	border-left: 0;
+	border-top: 0;
+    transform-origin: top right;
+    transform: skew(30deg, 0deg);
+}
+.one.quatre  {
+	margin-left: 120px;
+}
+
+
